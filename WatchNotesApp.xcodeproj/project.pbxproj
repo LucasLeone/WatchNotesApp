@@ -3,18 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC99B7392C2CDD84000DBC03 /* WatchNotesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99B7382C2CDD84000DBC03 /* WatchNotesAppApp.swift */; };
-		AC99B73B2C2CDD84000DBC03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99B73A2C2CDD84000DBC03 /* ContentView.swift */; };
-		AC99B73D2C2CDD85000DBC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC99B73C2C2CDD85000DBC03 /* Assets.xcassets */; };
-		AC99B7402C2CDD85000DBC03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC99B73F2C2CDD85000DBC03 /* Preview Assets.xcassets */; };
 		AC99B7462C2CDD85000DBC03 /* WatchNotesApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AC99B7452C2CDD85000DBC03 /* WatchNotesApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AC99B74B2C2CDD85000DBC03 /* WatchNotesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99B74A2C2CDD85000DBC03 /* WatchNotesAppApp.swift */; };
-		AC99B74D2C2CDD85000DBC03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99B74C2C2CDD85000DBC03 /* ContentView.swift */; };
-		AC99B74F2C2CDD86000DBC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC99B74E2C2CDD86000DBC03 /* Assets.xcassets */; };
 		AC99B7522C2CDD86000DBC03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC99B7512C2CDD86000DBC03 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -44,16 +37,81 @@
 
 /* Begin PBXFileReference section */
 		AC99B7352C2CDD84000DBC03 /* WatchNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC99B7382C2CDD84000DBC03 /* WatchNotesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchNotesAppApp.swift; sourceTree = "<group>"; };
-		AC99B73A2C2CDD84000DBC03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AC99B73C2C2CDD85000DBC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC99B73F2C2CDD85000DBC03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC99B7452C2CDD85000DBC03 /* WatchNotesApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchNotesApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC99B74A2C2CDD85000DBC03 /* WatchNotesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchNotesAppApp.swift; sourceTree = "<group>"; };
-		AC99B74C2C2CDD85000DBC03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AC99B74E2C2CDD86000DBC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC99B7512C2CDD86000DBC03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AC99B7602C2CDDAB000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				WatchNotesAppApp.swift,
+			);
+			target = AC99B7342C2CDD84000DBC03 /* WatchNotesApp */;
+		};
+		AC99B7672C2CDDCF000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Note.swift,
+				SubNote.swift,
+			);
+			target = AC99B7342C2CDD84000DBC03 /* WatchNotesApp */;
+		};
+		AC99B76F2C2CDDFE000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				NoteViewModel.swift,
+				SubNoteViewModel.swift,
+			);
+			target = AC99B7342C2CDD84000DBC03 /* WatchNotesApp */;
+		};
+		AC99B7772C2CDE2F000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Preview Assets.xcassets",
+			);
+			target = AC99B7342C2CDD84000DBC03 /* WatchNotesApp */;
+		};
+		AC99B77B2C2CDE41000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CreateNoteView.swift,
+				CreateSubNoteView.swift,
+				EditNoteView.swift,
+				EditSubNoteView.swift,
+				HomeView.swift,
+				NoteDetailView.swift,
+				SubNoteDetailView.swift,
+			);
+			target = AC99B7342C2CDD84000DBC03 /* WatchNotesApp */;
+		};
+		AC99B7922C2CDFFE000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				WatchNotesAppApp.swift,
+			);
+			target = AC99B7442C2CDD85000DBC03 /* WatchNotesApp Watch App */;
+		};
+		AC99B7932C2CE00A000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				HomeView.swift,
+			);
+			target = AC99B7442C2CDD85000DBC03 /* WatchNotesApp Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AC99B75C2C2CDD90000DBC03 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7672C2CDDCF000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		AC99B75D2C2CDD94000DBC03 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B77B2C2CDE41000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		AC99B75E2C2CDD9D000DBC03 /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B76F2C2CDDFE000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
+		AC99B75F2C2CDDA1000DBC03 /* Others */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7602C2CDDAB000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Others; sourceTree = "<group>"; };
+		AC99B7752C2CDE2F000DBC03 /* Preview Content */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7772C2CDE2F000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Preview Content"; sourceTree = "<group>"; };
+		AC99B7902C2CDFF5000DBC03 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7932C2CE00A000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		AC99B7912C2CDFFB000DBC03 /* Others */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7922C2CDFFE000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Others; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC99B7322C2CDD84000DBC03 /* Frameworks */ = {
@@ -94,28 +152,20 @@
 		AC99B7372C2CDD84000DBC03 /* WatchNotesApp */ = {
 			isa = PBXGroup;
 			children = (
-				AC99B7382C2CDD84000DBC03 /* WatchNotesAppApp.swift */,
-				AC99B73A2C2CDD84000DBC03 /* ContentView.swift */,
-				AC99B73C2C2CDD85000DBC03 /* Assets.xcassets */,
-				AC99B73E2C2CDD85000DBC03 /* Preview Content */,
+				AC99B75F2C2CDDA1000DBC03 /* Others */,
+				AC99B75E2C2CDD9D000DBC03 /* ViewModels */,
+				AC99B75D2C2CDD94000DBC03 /* Views */,
+				AC99B75C2C2CDD90000DBC03 /* Models */,
+				AC99B7752C2CDE2F000DBC03 /* Preview Content */,
 			);
 			path = WatchNotesApp;
-			sourceTree = "<group>";
-		};
-		AC99B73E2C2CDD85000DBC03 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				AC99B73F2C2CDD85000DBC03 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		AC99B7492C2CDD85000DBC03 /* WatchNotesApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				AC99B74A2C2CDD85000DBC03 /* WatchNotesAppApp.swift */,
-				AC99B74C2C2CDD85000DBC03 /* ContentView.swift */,
-				AC99B74E2C2CDD86000DBC03 /* Assets.xcassets */,
+				AC99B7912C2CDFFB000DBC03 /* Others */,
+				AC99B7902C2CDFF5000DBC03 /* Views */,
 				AC99B7502C2CDD86000DBC03 /* Preview Content */,
 			);
 			path = "WatchNotesApp Watch App";
@@ -210,8 +260,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC99B7402C2CDD85000DBC03 /* Preview Assets.xcassets in Resources */,
-				AC99B73D2C2CDD85000DBC03 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC99B7522C2CDD86000DBC03 /* Preview Assets.xcassets in Resources */,
-				AC99B74F2C2CDD86000DBC03 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,8 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC99B73B2C2CDD84000DBC03 /* ContentView.swift in Sources */,
-				AC99B7392C2CDD84000DBC03 /* WatchNotesAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC99B74D2C2CDD85000DBC03 /* ContentView.swift in Sources */,
-				AC99B74B2C2CDD85000DBC03 /* WatchNotesAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
