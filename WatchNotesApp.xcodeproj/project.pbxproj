@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC99B7392C2CDD84000DBC03 /* WatchNotesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99B7382C2CDD84000DBC03 /* WatchNotesAppApp.swift */; };
+		AC99B73B2C2CDD84000DBC03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99B73A2C2CDD84000DBC03 /* ContentView.swift */; };
+		AC99B73D2C2CDD85000DBC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC99B73C2C2CDD85000DBC03 /* Assets.xcassets */; };
+		AC99B7402C2CDD85000DBC03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC99B73F2C2CDD85000DBC03 /* Preview Assets.xcassets */; };
+		AC99B7462C2CDD85000DBC03 /* WatchNotesApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AC99B7452C2CDD85000DBC03 /* WatchNotesApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC99B74B2C2CDD85000DBC03 /* WatchNotesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99B74A2C2CDD85000DBC03 /* WatchNotesAppApp.swift */; };
+		AC99B74D2C2CDD85000DBC03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99B74C2C2CDD85000DBC03 /* ContentView.swift */; };
+		AC99B74F2C2CDD86000DBC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC99B74E2C2CDD86000DBC03 /* Assets.xcassets */; };
+		AC99B7522C2CDD86000DBC03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC99B7512C2CDD86000DBC03 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC99B7472C2CDD85000DBC03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC99B72D2C2CDD84000DBC03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC99B7442C2CDD85000DBC03;
+			remoteInfo = "WatchNotesApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC99B7582C2CDD86000DBC03 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AC99B7462C2CDD85000DBC03 /* WatchNotesApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC99B7352C2CDD84000DBC03 /* WatchNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC99B7382C2CDD84000DBC03 /* WatchNotesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchNotesAppApp.swift; sourceTree = "<group>"; };
+		AC99B73A2C2CDD84000DBC03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC99B73C2C2CDD85000DBC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC99B73F2C2CDD85000DBC03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC99B7452C2CDD85000DBC03 /* WatchNotesApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchNotesApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC99B74A2C2CDD85000DBC03 /* WatchNotesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchNotesAppApp.swift; sourceTree = "<group>"; };
+		AC99B74C2C2CDD85000DBC03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC99B74E2C2CDD86000DBC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC99B7512C2CDD86000DBC03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC99B7322C2CDD84000DBC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC99B7422C2CDD85000DBC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC99B72C2C2CDD84000DBC03 = {
+			isa = PBXGroup;
+			children = (
+				AC99B7372C2CDD84000DBC03 /* WatchNotesApp */,
+				AC99B7492C2CDD85000DBC03 /* WatchNotesApp Watch App */,
+				AC99B7362C2CDD84000DBC03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC99B7362C2CDD84000DBC03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC99B7352C2CDD84000DBC03 /* WatchNotesApp.app */,
+				AC99B7452C2CDD85000DBC03 /* WatchNotesApp Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC99B7372C2CDD84000DBC03 /* WatchNotesApp */ = {
+			isa = PBXGroup;
+			children = (
+				AC99B7382C2CDD84000DBC03 /* WatchNotesAppApp.swift */,
+				AC99B73A2C2CDD84000DBC03 /* ContentView.swift */,
+				AC99B73C2C2CDD85000DBC03 /* Assets.xcassets */,
+				AC99B73E2C2CDD85000DBC03 /* Preview Content */,
+			);
+			path = WatchNotesApp;
+			sourceTree = "<group>";
+		};
+		AC99B73E2C2CDD85000DBC03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AC99B73F2C2CDD85000DBC03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC99B7492C2CDD85000DBC03 /* WatchNotesApp Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				AC99B74A2C2CDD85000DBC03 /* WatchNotesAppApp.swift */,
+				AC99B74C2C2CDD85000DBC03 /* ContentView.swift */,
+				AC99B74E2C2CDD86000DBC03 /* Assets.xcassets */,
+				AC99B7502C2CDD86000DBC03 /* Preview Content */,
+			);
+			path = "WatchNotesApp Watch App";
+			sourceTree = "<group>";
+		};
+		AC99B7502C2CDD86000DBC03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AC99B7512C2CDD86000DBC03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC99B7342C2CDD84000DBC03 /* WatchNotesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC99B7592C2CDD86000DBC03 /* Build configuration list for PBXNativeTarget "WatchNotesApp" */;
+			buildPhases = (
+				AC99B7312C2CDD84000DBC03 /* Sources */,
+				AC99B7322C2CDD84000DBC03 /* Frameworks */,
+				AC99B7332C2CDD84000DBC03 /* Resources */,
+				AC99B7582C2CDD86000DBC03 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC99B7482C2CDD85000DBC03 /* PBXTargetDependency */,
+			);
+			name = WatchNotesApp;
+			productName = WatchNotesApp;
+			productReference = AC99B7352C2CDD84000DBC03 /* WatchNotesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC99B7442C2CDD85000DBC03 /* WatchNotesApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC99B7552C2CDD86000DBC03 /* Build configuration list for PBXNativeTarget "WatchNotesApp Watch App" */;
+			buildPhases = (
+				AC99B7412C2CDD85000DBC03 /* Sources */,
+				AC99B7422C2CDD85000DBC03 /* Frameworks */,
+				AC99B7432C2CDD85000DBC03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchNotesApp Watch App";
+			productName = "WatchNotesApp Watch App";
+			productReference = AC99B7452C2CDD85000DBC03 /* WatchNotesApp Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC99B72D2C2CDD84000DBC03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					AC99B7342C2CDD84000DBC03 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					AC99B7442C2CDD85000DBC03 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = AC99B7302C2CDD84000DBC03 /* Build configuration list for PBXProject "WatchNotesApp" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC99B72C2C2CDD84000DBC03;
+			productRefGroup = AC99B7362C2CDD84000DBC03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC99B7342C2CDD84000DBC03 /* WatchNotesApp */,
+				AC99B7442C2CDD85000DBC03 /* WatchNotesApp Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC99B7332C2CDD84000DBC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC99B7402C2CDD85000DBC03 /* Preview Assets.xcassets in Resources */,
+				AC99B73D2C2CDD85000DBC03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC99B7432C2CDD85000DBC03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC99B7522C2CDD86000DBC03 /* Preview Assets.xcassets in Resources */,
+				AC99B74F2C2CDD86000DBC03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC99B7312C2CDD84000DBC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC99B73B2C2CDD84000DBC03 /* ContentView.swift in Sources */,
+				AC99B7392C2CDD84000DBC03 /* WatchNotesAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC99B7412C2CDD85000DBC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC99B74D2C2CDD85000DBC03 /* ContentView.swift in Sources */,
+				AC99B74B2C2CDD85000DBC03 /* WatchNotesAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC99B7482C2CDD85000DBC03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC99B7442C2CDD85000DBC03 /* WatchNotesApp Watch App */;
+			targetProxy = AC99B7472C2CDD85000DBC03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC99B7532C2CDD86000DBC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC99B7542C2CDD86000DBC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AC99B7562C2CDD86000DBC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchNotesApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = G7LM3WCU98;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchNotesApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = lucasleone.WatchNotesApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasleone.WatchNotesApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		AC99B7572C2CDD86000DBC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchNotesApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = G7LM3WCU98;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchNotesApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = lucasleone.WatchNotesApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasleone.WatchNotesApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		AC99B75A2C2CDD86000DBC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchNotesApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G7LM3WCU98;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchNotesApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasleone.WatchNotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC99B75B2C2CDD86000DBC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchNotesApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G7LM3WCU98;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchNotesApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasleone.WatchNotesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC99B7302C2CDD84000DBC03 /* Build configuration list for PBXProject "WatchNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC99B7532C2CDD86000DBC03 /* Debug */,
+				AC99B7542C2CDD86000DBC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC99B7552C2CDD86000DBC03 /* Build configuration list for PBXNativeTarget "WatchNotesApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC99B7562C2CDD86000DBC03 /* Debug */,
+				AC99B7572C2CDD86000DBC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC99B7592C2CDD86000DBC03 /* Build configuration list for PBXNativeTarget "WatchNotesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC99B75A2C2CDD86000DBC03 /* Debug */,
+				AC99B75B2C2CDD86000DBC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC99B72D2C2CDD84000DBC03 /* Project object */;
+}
