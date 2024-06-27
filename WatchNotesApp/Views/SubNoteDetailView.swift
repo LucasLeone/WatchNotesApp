@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SubNoteDetailView: View {
     @ObservedObject var viewModel: SubNoteViewModel
-    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var noteViewModel: NoteViewModel
     var note: Note
     @State private var showingEditSubNoteView = false
@@ -32,14 +31,13 @@ struct SubNoteDetailView: View {
             }
             Button(action: {
                 noteViewModel.removeSubNote(from: note, subNote: viewModel.subNote)
-                presentationMode.wrappedValue.dismiss()
             }) {
                 Image(systemName: "trash")
                     .foregroundColor(.red)
             }
         })
         .sheet(isPresented: $showingEditSubNoteView) {
-            EditSubNoteView(viewModel: viewModel, noteViewModel: noteViewModel, note: note)
+            EditSubNoteView(viewModel: viewModel, noteViewModel: noteViewModel, note: note, subNote: viewModel.subNote)
         }
     }
 }

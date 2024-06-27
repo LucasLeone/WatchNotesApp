@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct CreateSubNoteView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewModel: NoteViewModel
@@ -36,6 +38,11 @@ struct CreateSubNoteView: View {
                 }
             }
             .navigationTitle("Crear subnota")
+            .navigationBarItems(
+                leading: Button("Cancelar") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            )
         }
     }
 }

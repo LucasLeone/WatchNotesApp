@@ -27,16 +27,18 @@ struct EditNoteView: View {
                 }
                 
                 Button(action: {
-                    // Actualizar el título de la nota
-                    if let index = viewModel.notes.firstIndex(where: { $0.id == note.id }) {
-                        viewModel.notes[index].title = noteTitle
-                    }
+                    viewModel.updateNote(note: note, newTitle: noteTitle)
                     presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Guardar")
                 }
             }
             .navigationTitle("Editar nota")
+            .navigationBarItems(
+                leading: Button("Cancelar") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            )
         }
     }
 }

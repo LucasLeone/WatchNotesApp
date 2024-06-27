@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct CreateNoteView: View {
-    @Environment(\.presentationMode) var presentationMode
     @ObservedObject var viewModel: NoteViewModel
     @State private var noteTitle: String = ""
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         NavigationView {
@@ -27,6 +27,11 @@ struct CreateNoteView: View {
                 }
             }
             .navigationTitle("Crear nota")
+            .navigationBarItems(
+                leading: Button("Cancelar") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            )
         }
     }
 }

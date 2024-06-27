@@ -13,7 +13,6 @@ struct NoteDetailView: View {
     @State private var showingCreateSubNoteView = false
     @State private var showingEditNoteView = false
     @State private var editMode = EditMode.inactive
-    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         List {
@@ -39,7 +38,6 @@ struct NoteDetailView: View {
                 }
                 Button(action: {
                     viewModel.removeNote(note: note)
-                    presentationMode.wrappedValue.dismiss()
                 }) {
                     Image(systemName: "trash")
                         .foregroundColor(.red)

@@ -12,15 +12,17 @@ struct EditSubNoteView: View {
     @ObservedObject var viewModel: SubNoteViewModel
     var noteViewModel: NoteViewModel
     var note: Note
+    var subNote: SubNote
     @State private var subNoteTitle: String
     @State private var subNoteContent: String
     
-    init(viewModel: SubNoteViewModel, noteViewModel: NoteViewModel, note: Note) {
+    init(viewModel: SubNoteViewModel, noteViewModel: NoteViewModel, note: Note, subNote: SubNote) {
         self.viewModel = viewModel
         self.noteViewModel = noteViewModel
         self.note = note
-        _subNoteTitle = State(initialValue: viewModel.subNote.title)
-        _subNoteContent = State(initialValue: viewModel.subNote.content)
+        self.subNote = subNote
+        _subNoteTitle = State(initialValue: subNote.title)
+        _subNoteContent = State(initialValue: subNote.content)
     }
     
     var body: some View {
@@ -38,19 +40,18 @@ struct EditSubNoteView: View {
                 }
                 
                 Button(action: {
-                    // Actualizar los valores de la subnota
-                    if let index = noteViewModel.notes.firstIndex(where: { $0.id == note.id }) {
-                        if let subNoteIndex = noteViewModel.notes[index].subNotes.firstIndex(where: { $0.id == viewModel.subNote.id }) {
-                            noteViewModel.notes[index].subNotes[subNoteIndex].title = subNoteTitle
-                            noteViewModel.notes[index].subNotes[subNoteIndex].content = subNoteContent
-                        }
-                    }
+                    viewModel.updateSubNoteInNote(subNote: subNote, newTitle: subNoteTitle, newContent: subNoteContent)
                     presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Guardar")
                 }
             }
             .navigationTitle("Editar subnota")
+            .navigationBarItems(
+                leading: Button("Cancelar") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            )
         }
     }
 }
