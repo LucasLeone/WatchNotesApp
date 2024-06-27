@@ -5,7 +5,7 @@
 //  Created by Lucas Leone on 26/06/2024.
 //
 
-import SwiftUI
+import Foundation
 import Combine
 
 class NoteViewModel: ObservableObject {
@@ -55,7 +55,7 @@ class NoteViewModel: ObservableObject {
         }
     }
     
-    private func loadNotes() -> [Note] {
+    func loadNotes() -> [Note] {
         if let savedNotes = UserDefaults.standard.object(forKey: "notes") as? Data {
             let decoder = JSONDecoder()
             if let loadedNotes = try? decoder.decode([Note].self, from: savedNotes) {
