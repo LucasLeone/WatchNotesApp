@@ -10,13 +10,15 @@ import SwiftUI
 struct NoteDetailView: View {
     var note: Note
     @ObservedObject var viewModel: NoteViewModel
-    
+
     var body: some View {
         List {
             ForEach(note.subNotes) { subNote in
-                NavigationLink(destination:
-                                SubNoteDetailView(viewModel: SubNoteViewModel(subNote: subNote), noteViewModel: viewModel, note: note)) {
+                VStack(alignment: .leading) {
                     Text(subNote.title)
+                        .font(.headline)
+                    Text(subNote.content)
+                        .font(.subheadline)
                 }
             }
         }

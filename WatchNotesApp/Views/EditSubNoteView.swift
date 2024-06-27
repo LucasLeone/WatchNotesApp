@@ -12,7 +12,6 @@ struct EditSubNoteView: View {
     @ObservedObject var viewModel: SubNoteViewModel
     var noteViewModel: NoteViewModel
     var note: Note
-    var subNote: SubNote
     @State private var subNoteTitle: String
     @State private var subNoteContent: String
     
@@ -20,7 +19,6 @@ struct EditSubNoteView: View {
         self.viewModel = viewModel
         self.noteViewModel = noteViewModel
         self.note = note
-        self.subNote = subNote
         _subNoteTitle = State(initialValue: subNote.title)
         _subNoteContent = State(initialValue: subNote.content)
     }
@@ -40,7 +38,7 @@ struct EditSubNoteView: View {
                 }
                 
                 Button(action: {
-                    viewModel.updateSubNoteInNote(subNote: subNote, newTitle: subNoteTitle, newContent: subNoteContent)
+                    viewModel.updateSubNoteInNote(newTitle: subNoteTitle, newContent: subNoteContent)
                     presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Guardar")

@@ -36,16 +36,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC244A1E2C2D8DEE00E75DD7 /* WatchNotesApp Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchNotesApp Watch App.entitlements"; sourceTree = "<group>"; };
+		AC244A1F2C2D8E1400E75DD7 /* WatchNotesApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchNotesApp.entitlements; sourceTree = "<group>"; };
+		AC244A202C2D8EE600E75DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AC99B7352C2CDD84000DBC03 /* WatchNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC99B7452C2CDD85000DBC03 /* WatchNotesApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchNotesApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC99B7512C2CDD86000DBC03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AC244A292C2DDA0800E75DD7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CloudDefaultsWrapper.swift,
+			);
+			target = AC99B7442C2CDD85000DBC03 /* WatchNotesApp Watch App */;
+		};
 		AC99B7602C2CDDAB000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
+				CloudDefaultsWrapper.swift,
 				WatchNotesAppApp.swift,
 			);
 			target = AC99B7342C2CDD84000DBC03 /* WatchNotesApp */;
@@ -125,7 +136,7 @@
 		AC99B75C2C2CDD90000DBC03 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7672C2CDDCF000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, AC99B79B2C2D14D2000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
 		AC99B75D2C2CDD94000DBC03 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B77B2C2CDE41000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
 		AC99B75E2C2CDD9D000DBC03 /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B76F2C2CDDFE000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, AC99B7952C2D141C000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
-		AC99B75F2C2CDDA1000DBC03 /* Others */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7602C2CDDAB000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Others; sourceTree = "<group>"; };
+		AC99B75F2C2CDDA1000DBC03 /* Others */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7602C2CDDAB000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, AC244A292C2DDA0800E75DD7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Others; sourceTree = "<group>"; };
 		AC99B7752C2CDE2F000DBC03 /* Preview Content */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7772C2CDE2F000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Preview Content"; sourceTree = "<group>"; };
 		AC99B7902C2CDFF5000DBC03 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7932C2CE00A000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
 		AC99B7912C2CDFFB000DBC03 /* Others */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AC99B7922C2CDFFE000DBC03 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Others; sourceTree = "<group>"; };
@@ -170,6 +181,8 @@
 		AC99B7372C2CDD84000DBC03 /* WatchNotesApp */ = {
 			isa = PBXGroup;
 			children = (
+				AC244A202C2D8EE600E75DD7 /* Info.plist */,
+				AC244A1F2C2D8E1400E75DD7 /* WatchNotesApp.entitlements */,
 				AC99B75F2C2CDDA1000DBC03 /* Others */,
 				AC99B75E2C2CDD9D000DBC03 /* ViewModels */,
 				AC99B75D2C2CDD94000DBC03 /* Views */,
@@ -182,6 +195,7 @@
 		AC99B7492C2CDD85000DBC03 /* WatchNotesApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				AC244A1E2C2D8DEE00E75DD7 /* WatchNotesApp Watch App.entitlements */,
 				AC99B7912C2CDFFB000DBC03 /* Others */,
 				AC99B7902C2CDFF5000DBC03 /* Views */,
 				AC99B7502C2CDD86000DBC03 /* Preview Content */,
@@ -436,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchNotesApp Watch App/WatchNotesApp Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchNotesApp Watch App/Preview Content\"";
@@ -466,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchNotesApp Watch App/WatchNotesApp Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchNotesApp Watch App/Preview Content\"";
@@ -497,12 +513,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WatchNotesApp/WatchNotesApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchNotesApp/Preview Content\"";
 				DEVELOPMENT_TEAM = G7LM3WCU98;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatchNotesApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchNotesApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -533,12 +551,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WatchNotesApp/WatchNotesApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchNotesApp/Preview Content\"";
 				DEVELOPMENT_TEAM = G7LM3WCU98;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatchNotesApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchNotesApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

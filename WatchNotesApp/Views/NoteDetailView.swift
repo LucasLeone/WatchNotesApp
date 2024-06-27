@@ -17,7 +17,13 @@ struct NoteDetailView: View {
     var body: some View {
         List {
             ForEach(note.subNotes) { subNote in
-                NavigationLink(destination: SubNoteDetailView(viewModel: SubNoteViewModel(subNote: subNote), noteViewModel: viewModel, note: note)) {
+                NavigationLink(
+                    destination: SubNoteDetailView(
+                        viewModel: SubNoteViewModel(subNote: subNote, noteViewModel: viewModel, parentNote: note),
+                        noteViewModel: viewModel,
+                        note: note
+                    )
+                ) {
                     Text(subNote.title)
                 }
             }

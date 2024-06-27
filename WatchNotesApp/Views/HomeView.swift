@@ -15,7 +15,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.notes) { note in
+                ForEach(viewModel.storedNotes) { note in
                     NavigationLink(destination: NoteDetailView(note: note, viewModel: viewModel)) {
                         Text(note.title)
                     }

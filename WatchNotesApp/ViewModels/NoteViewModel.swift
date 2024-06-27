@@ -10,11 +10,15 @@ import Combine
 
 class NoteViewModel: ObservableObject {
     @Published var notes: [Note] = []
+
+    @CloudDefault(key: "notes", defaultValue: [Note]())
+    var storedNotes: [Note]
     
     init() {
-        self.notes = loadNotes()
+        self.notes = storedNotes
+        print("Loaded notes: \(self.notes)")  // Verifica si las notas se están cargando correctamente
     }
-    
+        
     func addNote(title: String) {
         let newNote = Note(title: title, subNotes: [])
         notes.append(newNote)
@@ -48,20 +52,8 @@ class NoteViewModel: ObservableObject {
         }
     }
     
-    private func saveNotes() {
-        let encoder = JSONEncoder()
-        if let encoded = try? encoder.encode(notes) {
-            UserDefaults.standard.set(encoded, forKey: "notes")
-        }
-    }
-    
-    func loadNotes() -> [Note] {
-        if let savedNotes = UserDefaults.standard.object(forKey: "notes") as? Data {
-            let decoder = JSONDecoder()
-            if let loadedNotes = try? decoder.decode([Note].self, from: savedNotes) {
-                return loadedNotes
-            }
-        }
-        return []
+    func saveNotes() {
+        storedNotes = notes
+        print("Saved notes: \(self.notes)")  // Verifica si las notas se están guardando correctamente
     }
 }
